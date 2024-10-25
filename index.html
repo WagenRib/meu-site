@@ -1,20 +1,98 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head  style="font-family: Arial, Helvetica, sans-serif;  ;"> <img src="viva confeccoes horizontal.png" alt="logo viva confecções">
-    <hr>
+<html lang="pt-BR">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title style="color: chocolate;">Viva Confecções</title>
+    <title>Bonés Personalizados - Solicite Orçamento</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
-<body style="background-color: blanchedalmond; font-family: Arial, Helvetica, sans-serif;" >
-    <h1>Viva confecções </h1>
-    <img src="BONÉ_JAPONÊS_SUA_MARCA_AQUI-removebg-preview.png" alt="Boné sua Marca Aqui">
-    <img src="boneCocaColap.png" alt="Boné Coca Cola">
-    <p>Sua Melhor opção em Uniformes e Brindes.
+<body>
+    <!-- Popup LGPD -->
+    <div class="lgpd-popup">
+        <p>Utilizamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="#">Política de Privacidade</a>.</p>
+        <button onclick="closePopup()">Aceitar</button>
+    </div>
+    
+    <!-- Página Inicial -->
+    <header>
+        <img src="logo.png" alt="Logo da Empresa" class="logo">
+    </header>
+    <main>
+        <section class="intro">
+            <h1><strong>Bonés Personalizados</strong> para sua <em>marca</em></h1>
+            <p>A partir de 30 unidades iguais. Não perca essa oportunidade! Solicite seu orçamento agora.</p>
+            <button class="cta-button" onclick="openWhatsApp()">Solicitar Orçamento</button>
+            <p class="small-text">*A partir de 30 unidades iguais.</p>
+            <input type="text" placeholder="Digite seu número de WhatsApp">
+        </section>
 
+        <section class="image-section">
+            <img src="bonnet-image.jpg" alt="Imagem do Boné Personalizado">
+        </section>
 
-       
-    </p>
-    <p> Whatsapp 043 99936-7925</p>
+        <section class="terms">
+            <p>Ao enviar este formulário, o cliente concorda com as <a href="#" target="_blank">políticas de privacidade</a>.</p>
+        </section>
+
+        <!-- Página de Informações -->
+        <section class="info-page">
+            <h2>Veja como funciona:</h2>
+            <ol>
+                <li>Envie sua arte ou escolha uma pronta</li>
+                <li>Aprovamos juntos o design final</li>
+                <li>Produzimos com qualidade e rapidez</li>
+                <li>Entregamos no prazo combinado</li>
+            </ol>
+            <img src="product-image.jpg" alt="Foto de Produtos">
+            
+            <div class="carousel">
+                <img src="carousel1.jpg" alt="Imagem 1">
+                <img src="carousel2.jpg" alt="Imagem 2">
+                <!-- Adicione mais imagens conforme necessário -->
+            </div>
+            
+            <div class="details">
+                <div class="detail">
+                    <img src="icon.png" alt="Ícone">
+                    <p>Prazo de fabricação</p>
+                    <p>A partir de 12 dias úteis</p>
+                </div>
+                <!-- Repita para mais detalhes -->
+            </div>
+        </section>
+
+        <!-- Página de História e Depoimentos -->
+        <section class="blue-page">
+            <section class="company-history">
+                <h2>Sobre Nós</h2>
+                <p>Breve história da empresa e justificativa para a compra dos bonés personalizados.</p>
+            </section>
+
+            <section class="testimonials">
+                <h3>Depoimentos</h3>
+                <blockquote>"Ótimo produto e excelente atendimento!"</blockquote>
+                <blockquote>"Recomendo a todos que procuram qualidade."</blockquote>
+            </section>
+
+            <section class="faq">
+                <h3>Perguntas Frequentes</h3>
+                <ul>
+                    <li>Como faço para pedir um orçamento?</li>
+                    <li>Qual o prazo de produção?</li>
+                    <li>Posso enviar minha própria arte?</li>
+                    <!-- Continue adicionando perguntas conforme necessário -->
+                </ul>
+            </section>
+
+            <footer>
+                <address>
+                    Rua Exemplo, 123 - Centro, Cidade/UF<br>
+                    CNPJ: 00.000.000/0000-00
+                </address>
+            </footer>
+        </section>
+    </main>
 </body>
 </html>
+
