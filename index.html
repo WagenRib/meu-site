@@ -22,7 +22,44 @@
         <section class="intro">
             <h1><strong>Bonés Personalizados</strong> para sua <em>marca</em></h1>
             <p>A partir de 30 unidades iguais. Não perca essa oportunidade! Solicite seu orçamento agora.</p>
-            <button class="cta-button" onclick="openWhatsApp()">Solicitar Orçamento</button>
+            <!DOCTYPE html>
+            <html lang="pt-BR">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Formulário Modal</title>
+                <link rel="stylesheet" href="styles.css">
+            </head>
+            <body>
+                <button id="openModalBtn">Abrir Formulário</button>
+            
+                <!-- Modal -->
+                <div id="formModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Preencha o Formulário</h2>
+                        <form action="/enviar" method="post" enctype="multipart/form-data">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" required>
+                            
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" required>
+                            
+                            <label for="whatsapp">WhatsApp:</label>
+                            <input type="tel" id="whatsapp" name="whatsapp" placeholder="(99) 99999-9999" required>
+                            
+                            <label for="arquivo">Enviar Arquivo:</label>
+                            <input type="file" id="arquivo" name="arquivo" required>
+                            
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            
+                <script src="script.js"></script>
+            </body>
+            </html>
+            
             <p class="small-text">*A partir de 30 unidades iguais.</p>
             <input type="text" placeholder="Digite seu número de WhatsApp">
         </section>
